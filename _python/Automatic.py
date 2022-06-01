@@ -23,9 +23,9 @@ template_text += signature
 
 # Overwrite README with template + signature
 with open(readme_file, 'w') as readme_document:
-    # readme_document.write(template_text)
+    readme_document.write(template_text)
     pass
 
 # Git commit and push
-# os.system(git_commit)
-# os.system(git_push)
+os.system(git_commit)
+os.system(git_push)
