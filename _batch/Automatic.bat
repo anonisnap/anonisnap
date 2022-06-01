@@ -1,4 +1,4 @@
-@ECHO ON
+@ECHO OFF
 
 :copy_template
 TYPE TEMPLATE.md > README.md
