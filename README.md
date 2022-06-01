@@ -1,16 +1,33 @@
-### Hi there 👋
+### Hello There! 👋
 
-<!--
-**anonisnap/anonisnap** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+##### Welcome to my Profile
 
-Here are some ideas to get you started:
+My name is anonisnap and I'm a fan of most things Software, and I love to optimize different things whenever I find the possibility to do so
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Though, a little problematic, I often try to do things without help first, and only look for other options when I'm completely stuck, or have a working solution
+
+<hr>
+
+Some of my favourite things include:
+- Playing Videogames
+- Making small QOL scripts
+- Horrible and Naive bots for games
+- Watching Anime
+- Reading Manga
+
+My current experience with Programming Languages include:
+- Java
+- C# / .NET
+- Python
+- C
+- AHK
+
+In the future I would like to learn the basics of more different languages, and expand my own horizon
+Some of the other languages I've had a brief look at include:
+- Kotlin
+- JavaScript
+- C++
+
+_The text you see here is from a special repository, where I have scripts automatically change the file and commit it when run_
+
+    This file has been modified by Python
