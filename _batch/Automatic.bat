@@ -16,15 +16,11 @@ ECHO: >> README.md
 
 ECHO %codeblock% >> README.md
 
-ECHO: >> README.md
-
 ECHO %signature% >> README.md
-
-ECHO: >> README.md
 
 ECHO %codeblock% >> README.md
 
 :git_commit
 
-git commit README.md -m "Updated README\n  ~ Python"
+git commit README.md -m "Updated README\n  ~ Batch"
 git push
