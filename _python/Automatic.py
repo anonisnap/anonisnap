@@ -9,7 +9,7 @@ git_commit = "git commit README.md -m \"Updated README\n  ~ Python\""
 git_push = "git push"
 
 # Signature Text
-signature = "\n\n    This file has been modified by Python"
+signature = "\n\n<br>\n\n```\nThis file was lastly modified by Python\n```"
 
 # Buffer Variable
 template_text = ""
