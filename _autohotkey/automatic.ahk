@@ -36,7 +36,7 @@ SendInput, {Enter 2}``````{Enter}This file was lastly modified by AutoHotKey{Ent
 SendInput, ^s!{F4}
 
 ; Git Commit
-RunWait, git commit README.md -m "This file was lastly modified by AutoHotKey"
+RunWait, git commit README.md -m "This file was lastly modified by AutoHotKey", , Hide, 
 
 ; Git Push
-RunWait, git push
+RunWait, git push, , Hide, 
