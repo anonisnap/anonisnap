@@ -30,6 +30,7 @@ If (ErrorLevel = 1){
 SendInput, ^a
 Sleep, 20
 SendInput, {Delete}
+Sleep, 50
 
 ; Load the Template
 FileRead, _template_text, %_template_file%
@@ -40,7 +41,7 @@ StringReplace, _template_text, _template_text, `r, , All
 ; Update README.md using Template
 SendRaw, %_template_text%
 SendRaw, %_signature%
-; SendInput, ^s!{F4}
+SendInput, ^s!{F4}
 
 ; Git Commit
 RunWait, git commit README.md -m %_commit% 
