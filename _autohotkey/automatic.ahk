@@ -9,8 +9,7 @@ _notepad_exe := "C:\WINDOWS\system32\notepad.exe"
 _read_me_file := "..\README.md"
 _template_file := "..\TEMPLATE.md"
 _signature := "{Enter 2}``````{Enter}This file was lastly modified by AutoHotKey{Enter}``````{Enter}"
-_commit := "git commit README.md -m 'Updated README`n ~ AutoHotKey'"
-_push := "git push"
+_commit = "This file was lastly modified by AutoHotKey"
 
 ; Open the README.md file in Notepad
 Run %_notepad_exe% %_read_me_file%
@@ -40,11 +39,11 @@ StringReplace, _template_text, _template_text, `r, , All
 
 ; Update README.md using Template
 SendRaw, %_template_text%
-SendInput, %_signature%
+SendRaw, %_signature%
 ; SendInput, ^s!{F4}
 
 ; Git Commit
-SendRaw, %_commit% 
+RunWait, git commit README.md -m %_commit% 
 
 ; Git Push
-SendRaw, %_push%
+RunWait, git push
