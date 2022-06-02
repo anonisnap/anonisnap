@@ -4,26 +4,18 @@ SetWorkingDir, %A_WorkingDir%/..
 
 FileEncoding, UTF-8
 
-; Set Local Variables
-_notepad_exe := "C:\WINDOWS\system32\notepad.exe"
-_read_me_file := "..\README.md"
-_template_file := "..\TEMPLATE.md"
-_signature := "{Enter 2}``````{Enter}This file was lastly modified by AutoHotKey{Enter}``````{Enter}"
-_commit = "This file was lastly modified by AutoHotKey"
-
 ; Open the README.md file in Notepad
-Run %_notepad_exe% %_read_me_file%
+Run C:\WINDOWS\system32\notepad.exe README.md
 
 ; Ensure window has opened
-_window_title := "README.md - Notepad"
-WinWait, %_window_title%, , 2
+WinWait, README.md - Notepad, , 2
 
 If (ErrorLevel = 1){
     TrayTip, Error, README window could not be found, , 3
     ExitApp, 1
 } Else {
     Sleep, 200
-    WinActivate, %_window_title%, , , 
+    WinActivate, README.md - Notepad, , , 
 }
 
 ; Clear the file
@@ -33,18 +25,18 @@ SendInput, {Delete}
 Sleep, 50
 
 ; Load the Template
-FileRead, _template_text, %_template_file%
+FileRead, _template_text, TEMPLATE.md
 
 ; Remove double Newlines
 StringReplace, _template_text, _template_text, `r, , All
 
 ; Update README.md using Template
 SendRaw, %_template_text%
-SendRaw, %_signature%
+SendInput, {Enter 2}``````{Enter}This file was lastly modified by AutoHotKey{Enter}``````{Enter}
 SendInput, ^s!{F4}
 
 ; Git Commit
-RunWait, git commit README.md -m %_commit% 
+RunWait, git commit README.md -m "This file was lastly modified by AutoHotKey"
 
 ; Git Push
 RunWait, git push
