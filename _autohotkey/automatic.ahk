@@ -1,7 +1,6 @@
 #SingleInstance, Force
 SendMode Input
 SetWorkingDir, %A_WorkingDir%/..
-
 FileEncoding, UTF-8
 
 ; Open the README.md file in Notepad
@@ -40,3 +39,6 @@ RunWait, git commit README.md -m "This file was lastly modified by AutoHotKey", 
 
 ; Git Push
 RunWait, git push, , Hide, 
+
+; Inform the User that Script is Finished
+TrayTip, Done, README has now been updated, , 1
