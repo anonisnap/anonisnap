@@ -42,3 +42,5 @@ RunWait, git push, , Hide,
 
 ; Inform the User that Script is Finished
 TrayTip, Done, README has now been updated, , 1
+
+ExitApp, 0
