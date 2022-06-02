@@ -1,6 +1,6 @@
 #SingleInstance, Force
 SendMode Input
-SetWorkingDir, %A_ScriptDir%
+SetWorkingDir, %A_WorkingDir%/..
 
 FileEncoding, UTF-8
 
