@@ -34,6 +34,8 @@ SendRaw, %_template_text%
 SendInput, {Enter 2}``````{Enter}This file was lastly modified by AutoHotKey{Enter}``````{Enter}
 SendInput, ^s!{F4}
 
+Sleep, 1000
+
 ; Git Commit
 RunWait, git commit README.md -m "This file was lastly modified by AutoHotKey", , Hide, 
 
