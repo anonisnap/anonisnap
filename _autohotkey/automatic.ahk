@@ -1,6 +1,6 @@
 #SingleInstance, Force
 SendMode Input
-SetWorkingDir, %A_WorkingDir%/..
+SetWorkingDir, %A_WorkingDir%
 FileEncoding, UTF-8
 
 ; Open the README.md file in Notepad
