@@ -4,7 +4,7 @@
 
 My name is anonisnap and I'm a fan of most things Software, and I love to optimize different things whenever I find the possibility to do so
 
-Though, a little problematic, I often try to do things without help first, and only look for other options when I'm completely stuck, or have a working solution
+Though, a little problematic, I often try to do things without help first, and only look for other options when I'm completely stuck, or have a working solution.
 
 <hr>
 
