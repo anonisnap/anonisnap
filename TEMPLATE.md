@@ -23,6 +23,7 @@ My current experience with Programming Languages include:
 - AHK
 
 In the future I would like to learn the basics of more different languages, and expand my own horizon
+
 Some of the other languages I've had a brief look at include:
 - Kotlin
 - JavaScript
